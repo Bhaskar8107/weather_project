@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/clear.png" />
+  </head>
+  <body>
+    <div class="card">
+      <form class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" required />
+        <button type="submit">
+          <img src="img/search.png" alt="Search" class="search-icon" />
+          <div class="spinner"></div>
+        </button>
+      </form>
+
+      <div class="error">
+        <p>Invalid city name. Please try again.</p>
+      </div>
+
+      <div class="weather">
+        <img src="img/clear.png" class="weather-icon" alt="Weather icon" />
+        <h1 class="temp">--°C</h1>
+        <h2 class="city">City Name</h2>
+        <p class="description">--</p> <!-- Added for weather description -->
+        <div class="details">
+          <div class="col">
+            <img src="img/humidity.png" alt="Humidity" />
+            <div>
+              <p class="humidity">--%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/wind.png" alt="Wind" />
+            <div>
+              <p class="wind">-- km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
